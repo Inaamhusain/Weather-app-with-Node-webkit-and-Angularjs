@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" ng-app="weatherApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/loading-bar.css">
+		<script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-animate.js"></script>
+    <script src="lib/loading-bar/loading-bar.js"></script>
+		<script src="app/app.js"></script>
+  </head>
+  <body ng-controller="weatherControl">
+		<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Weather App</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav">
+          </ul>
+        </div>
+      </div>
+    </nav>
+		<div role="main" class="container theme-showcase">
+      <div class="" style="margin-top:90px;">
+        <nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a class="navbar-brand">Search weather</a>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" ng-model="assetName" ng-change="searchWeather()" placeholder="Enter city name..">
+								</div>
+								<button type="submit" class="btn btn-info" ng-click="searchWeather()">Submit</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a>{{totalCount}} Results Found</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="row">
+					<div class="col-sm-6 col-md-4" ng-repeat="item in items" ng-cloak>
+						<div class="thumbnail">
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="http://openweathermap.org/img/w/{{item.weather[0].icon}}.png" alt="" style="max-width: 50px;">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">{{item.name}}, {{item.sys.country}}</h4>
+									<h4><span class="label label-primary">{{item.main.temp}}°С</span></h4>
+									<span>{{item.weather[0].main}}, {{item.weather[0].description}}</span><br>
+									<span>Geo coords [ {{item.coord.lon}}, {{item.coord.lat}} ]</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+    </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>

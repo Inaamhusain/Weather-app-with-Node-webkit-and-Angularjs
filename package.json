@@ -1,0 +1,17 @@
+{
+  "name": "myapp.weather",
+  "version": "0.0.1",
+  "description": "Weather app, that shows info about weather",
+  "main": "index.html",
+	"window": {
+    "toolbar": false,
+		"min_width": 800,
+		"min_height": 600,
+		"icon": "Weather_Icon.png"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inaam",
+  "license": "MIT"
+}

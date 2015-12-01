@@ -21,4 +21,6 @@ To check whether it's working, Go to location inside the folder in command promp
 
 ##Packaging the app
 go to parent directory that contains the weatherApp folder. and type following command,  
-`nwbuild -p win32,win64,osx32,osx64,linux32,linux64 appfolder`
+`nwbuild -p win32,win64,osx32,osx64,linux32,linux64 appfolder`  
+
+**Note** : While packaging app if you will get any error like file missing or any other errors. download nw.js from it's official website([http://nwjs.io](http://nwjs.io "http://nwjs.io")) and place whole folder to its particular location which you can see the path in error. or else there is another way you can try this ( [https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps](https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps "https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps") ) documents for packaging app.

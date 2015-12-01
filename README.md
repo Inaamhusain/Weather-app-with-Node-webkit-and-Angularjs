@@ -2,8 +2,8 @@
 Creating Weather desktop app with **Node webkit** and **Angularjs**. which shows informations like place name, Temprature, weather info (i.e: cloudy, rainy etc.) and GEO location co-ordination.
 
 ##Tutorials
-1.[Weather app with Node webkit and Angularjs : part 1](# "Weather app with Node webkit and Angularjs : part 1")  
-2.[Weather app with Node webkit and Angularjs : part 2](# "Weather app with Node webkit and Angularjs : part 2")
+1.[Weather app with Node webkit and Angularjs : part 1](http://code.ciphertrick.com/2015/12/01/weather-app-with-node-webkit-and-angularjs-part-1/ "Weather app with Node webkit and Angularjs : part 1")  
+2.[Weather app with Node webkit and Angularjs : part 2](http://code.ciphertrick.com/2015/12/01/weather-app-with-node-webkit-and-angularjs-part-2/ "Weather app with Node webkit and Angularjs : part 2")
 
 ##How to run?
 ####Clone app
